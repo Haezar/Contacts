@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import './App.css';
+import '../styles/App.css';
 
 import ContactList from './ContactList';
 import ContactHeader from './ContactHeader';

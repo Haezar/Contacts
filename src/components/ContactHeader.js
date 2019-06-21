@@ -6,16 +6,16 @@ class ContactHeader extends Component {
     render() {
         let header;
         if(this.props.isContactPage){
-            header = <p>My Contacts</p>
+            header = <span className="contacts-body__header__title">My Contacts</span>
         }
         else{
-            header = <p>People</p>
+            header = <span className="contacts-body__header__title">People</span>
         }
         
         return (
-            <div>
+            <div className="contacts-body__header">
                   {header}
-                  <button className='header-button' onClick={this.props.changePage}>toggleButton</button>
+                  <button className="contacts-body__header__button" onClick={this.props.changePage}>toggleButton</button>  
             </div>
             
         );

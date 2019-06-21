@@ -1,0 +1,97 @@
+
+
+
+.contact-body__list__card {
+  border: solid gray 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+.contacts-body {
+  width: 45rem;
+  margin: auto;
+  padding-top:1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.contacts-body__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-body__header__button{
+  align-self: flex-end;
+}
+
+.contacts-body__header__title{
+  align-self: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: gray;
+}
+
+.contacts-body__list__card{
+  padding: 0.5rem;
+  display: flex;
+  border: solid 1px #ddd;
+  margin-top:1rem;
+}
+
+.contacts-body__list__card__information{
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+
+.contacts-body__list__card__information__main-line{
+  color:gray;
+}
+
+.contacts-body__list__card__information__line{
+  margin-top:0.2rem;
+  color:gray;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+}
+
+.contacts-body__list__card__information__user-name{
+  color:steelblue;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+  text-transform: capitalize;
+}
+
+svg{
+  
+  position: relative;
+  top:2px;
+  left:1px;
+}
+
+.contacts-body__list__card__information__user-status_status_ready svg{
+  fill: green;
+  
+}
+
+.contacts-body__list__card__information__user-status_status_busy svg{
+  fill: yellow;
+  
+}
+
+.contacts-body__list__card__controls__button{
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 8px;
+  border: 1px steelblue solid;
+  color:steelblue;
+  font-weight: 600;
+}
+
+.contacts-body__list__card__controls__button_filled{
+  background-color: steelblue;
+  color:#fff;
+}

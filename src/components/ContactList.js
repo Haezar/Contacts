@@ -13,7 +13,7 @@ class ContactList extends Component {
         });
                
         return (
-            <div className="contact-list">
+            <div className="contacts-body__list">
                 {
                     visibleUsers.map(item => {
                         return <ContactCard 
@@ -26,6 +26,7 @@ class ContactList extends Component {
                             country={item.country}
                             years={item.years}
                             job={item.job}
+                            hobby={item.hobby}
                             nativeLanguage={item.nativeLanguage}
                             studiedLanguages={item.studiedLanguages}
                             intro={item.intro}> 
