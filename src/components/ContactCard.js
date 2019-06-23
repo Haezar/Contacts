@@ -18,10 +18,10 @@ class ContactCard extends Component {
         </div>
 
         <div className="contacts-body__list__card__information">
-          <div className="contacts-body__list__card__information__name-line">
+          <div>
             <span className="contacts-body__list__card__information__user-name">{this.props.firstName + " " + this.props.lastName }</span>
             <span className={"contacts-body__list__card__information__user-status_status_"+this.props.status}>
-              <svg className='svg' width="15" height="15" viewBox="0 0 120 120" version="1.1"
+              <svg className='contacts-body__list__card__information__user-svg' width="15" height="15" viewBox="0 0 120 120" version="1.1"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle cx="60" cy="60" r="50"/>
               </svg> {' '+this.props.status}

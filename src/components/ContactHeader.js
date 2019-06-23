@@ -15,7 +15,9 @@ class ContactHeader extends Component {
         return (
             <div className="contacts-body__header">
                   {header}
-                  <button className="contacts-body__header__button" onClick={this.props.changePage}>toggleButton</button>  
+                  <input type="checkbox" id="switch" className="contacts-body__header__switch-input"  onChange={this.props.changePage}/>
+                  <label className="contacts-body__header__switch-label"  for="switch">Toggle</label>
+                  
             </div>
             
         );

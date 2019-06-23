@@ -1,13 +1,5 @@
 
 
-
-.contact-body__list__card {
-  border: solid gray 2px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  
-}
-
 .contacts-body {
   width: 45rem;
   margin: auto;
@@ -21,9 +13,6 @@
   flex-direction: column;
 }
 
-.contacts-body__header__button{
-  align-self: flex-end;
-}
 
 .contacts-body__header__title{
   align-self: center;
@@ -65,19 +54,18 @@
   text-transform: capitalize;
 }
 
-svg{
+.contacts-body__list__card__information__user-svg{
   
   position: relative;
   top:2px;
   left:1px;
 }
 
-.contacts-body__list__card__information__user-status_status_ready svg{
-  fill: green;
-  
+.contacts-body__list__card__information__user-status_status_ready{
+  fill: green; 
 }
 
-.contacts-body__list__card__information__user-status_status_busy svg{
+.contacts-body__list__card__information__user-status_status_busy{
   fill: yellow;
   
 }
@@ -94,4 +82,48 @@ svg{
 .contacts-body__list__card__controls__button_filled{
   background-color: steelblue;
   color:#fff;
+}
+
+
+.contacts-body__header__switch-input{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.contacts-body__header__switch-label {
+  align-self: flex-end;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 40px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.contacts-body__header__switch-label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+.contacts-body__header__switch-input:checked + label {
+	background: #bada55;
+}
+
+.contacts-body__header__switch-input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.contacts-body__header__switch-label:active:after {
+	width: 10px;
 }
