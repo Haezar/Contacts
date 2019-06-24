@@ -2,13 +2,11 @@
 	height: 0;
 	width: 0;
 	visibility: hidden;
-}
-
-.contacts-body__header__switch-input:checked + label {
-	background: #bada55;
-}
-
-.contacts-body__header__switch-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
+	&:checked + label {
+		background: #bada55;
+	}
+	&:checked + label:after {
+		left: calc(100% - 5px);
+		transform: translateX(-100%);
+	}
 }

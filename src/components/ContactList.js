@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ContactCard from './ContactCard';
-import {connect} from 'react-redux';
-
 class ContactList extends Component {
     render() {
         let visibleUsers = [];
@@ -10,8 +8,7 @@ class ContactList extends Component {
                 visibleUsers.push(item);
 
             }
-        });
-               
+        });        
         return (
             <div className="contacts-body__list">
                 {
@@ -29,20 +26,13 @@ class ContactList extends Component {
                             hobby={item.hobby}
                             nativeLanguage={item.nativeLanguage}
                             studiedLanguages={item.studiedLanguages}
-                            intro={item.intro}> 
+                            intro={item.intro}
+                            dispatch={this.props.dispatch}> 
                         </ContactCard>
                     })
                 }
             </div>
-        
         );
       } 
 }
-function mapStateToProps (state) {
-    return {
-      users: state.users,
-      isContactPage: state.isContactPage
-    }
-  }
-
-export default connect(mapStateToProps)(ContactList);
+export default ContactList;
